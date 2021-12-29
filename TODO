@@ -1,0 +1,3 @@
+[] add uglify grunt task for js
+[] add minify grunt task for css
+[] add both of the above to my watch config in gruntfile

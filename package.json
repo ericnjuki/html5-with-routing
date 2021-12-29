@@ -1,0 +1,17 @@
+{
+  "name": "html5-app-routing-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uwapi",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-html-convert": "^0.0.2"
+  }
+}

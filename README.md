@@ -1,0 +1,1 @@
+i abandoned this because, while the routing works 'fine' (when i click a link, it goes to the appropriate route), explicit routing doesn't work, in that when I put in a route directly in the browser navigation bar, it says the route is not found
