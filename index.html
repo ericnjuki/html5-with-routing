@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=350, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=500, initial-scale=1.0">
+  <title>HTML 5 With Routing</title>
   <script src="https://unpkg.com/vue@3.2.26/dist/vue.global.prod.js"></script>
   <script src="https://unpkg.com/vue-router@4.0.12/dist/vue-router.global.prod.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -13,15 +13,11 @@
   <div id="app">
     <h1>Hello App!</h1>
     <p>
-      <!-- use the router-link component for navigation. -->
-      <!-- specify the link by passing the `to` prop. -->
-      <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
       <router-link to="/">Go to Home</router-link>
       <br>
       <router-link to="/about">Go to About</router-link>
     </p>
-    <!-- route outlet -->
-    <!-- component matched by the route will render here -->
+
     <router-view></router-view>
   </div>
 </body>

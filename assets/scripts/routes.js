@@ -16,11 +16,3 @@ const router = VueRouter.createRouter({
 const app = Vue.createApp({})
 app.use(router)
 app.mount('#app')
-
-
-function fetchTemplate(componentName) {
-  var ajax = new XMLHttpRequest();
-  ajax.open("GET", "./components/" + componentName + ".component.html", false);
-  ajax.send();
-  return ajax.responseText;
-}

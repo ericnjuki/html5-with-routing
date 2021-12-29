@@ -1,6 +1,4 @@
 module.exports = function(grunt) {
-  const browserSyncFiles = ['*.html', 'components/*.html', '*.css', 'script.js', 'assets/scripts/*.js', 'assets/imgaes/*'];
-  // Do grunt-related things in here
   grunt.initConfig({
     htmlConvert: {
       options: {
@@ -15,7 +13,7 @@ module.exports = function(grunt) {
 
     browserSync: {
       bsFiles: {
-          src : browserSyncFiles,
+          src : ['*.html', 'components/*.html', '*.css', 'script.js', 'assets/scripts/*.js', 'assets/imgaes/*'],
       },
       options: {
         watchTask: true,
