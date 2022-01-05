@@ -1,3 +1,8 @@
 [] add uglify grunt task for js
 [] add minify grunt task for css
 [] add both of the above to my watch config in gruntfile
+- add references:
+  [] (getting started with vue-router) https://next.router.vuejs.org/guide/
+  [] (server configurations for VueRouter.createWebHistory to work properly) https://next.router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations
+  [] (browserSync) https://browsersync.io/docs/grunt
+  [] (grunt-html-convert) https://github.com/soundstep/grunt-html-convert

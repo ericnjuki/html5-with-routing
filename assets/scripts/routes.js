@@ -1,5 +1,12 @@
 const Home = { template:  template["../components/home.component.html"]};
-const About = { template: template["../components/about.component.html"]};
+const About = { 
+  template: template["../components/about.component.html"],
+  data() {
+    return {
+      sampleData: 'This is sample data about this app',
+    };
+  }
+};
 const NotFoundComponent = { template: template["../components/404.component.html"]};
 
 const routes = [
@@ -13,6 +20,6 @@ const router = VueRouter.createRouter({
   routes,
 })
 
-const app = Vue.createApp({})
-app.use(router)
-app.mount('#app')
+const app = Vue.createApp({});
+app.use(router);
+app.mount('#app');
