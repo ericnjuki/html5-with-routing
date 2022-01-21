@@ -4,14 +4,19 @@
   "description": "",
   "scripts": {
     "start": "grunt",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt production",
+    "deploy": "netlify deploy --prod --dir=dist"
   },
   "author": "uwapi",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-html-convert": "^0.0.2"
+    "grunt-html-convert": "^0.0.2",
+    "netlify-cli": "^8.6.13"
   }
 }

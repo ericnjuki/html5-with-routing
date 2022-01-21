@@ -22,6 +22,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    clean: {
+      production: ['dist']
+    },
+    copy: {
+      production: {
+        files: [{
+          src: ['**/*', '!*.gitignore', '!TODO', '!Gruntfile.js', '!package.json', '!package-lock.json', 'README.md', '!node_modules/**', '!components/**', '!dist/**', '!.*', '!.*/**',],
+          dest: 'dist/',
+        }]
+      }
+    },
     watch: {
       html: {
         files: ['components/*.html'],
@@ -32,7 +43,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-html-convert');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-browser-sync');
 
   grunt.registerTask('default', ['htmlConvert', 'browserSync', 'watch']);
+  grunt.registerTask('production', ['htmlConvert', 'clean', 'copy']);
 };
